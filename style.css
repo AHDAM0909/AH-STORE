@@ -9,7 +9,15 @@
 }
 
 body {
-  height: 750vh;
+  height: auto;
+  /* allow content to determine page height */
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  /* prevent sideways scroll caused by -50vw trick */
 }
 
 .headerParent {
@@ -18,12 +26,13 @@ body {
   background-position: center;
   height: 100vh;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 .headerWrapper {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10rem;
+  margin: 0 auto;
 }
 
 .headerContainer {
@@ -117,8 +126,8 @@ body {
 .secondWrapper {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10rem;
-  border-bottom: 1px solid #edf3da;
+  margin: 0 auto;
+
 }
 
 .secondContainer {
@@ -127,6 +136,8 @@ body {
   margin: 3rem 0;
   align-self: center;
   flex-wrap: wrap;
+  border-bottom: 1px solid #edf3da;
+  padding: 2rem 0;
 }
 
 .secondContent {
@@ -171,7 +182,7 @@ body {
 .plantTrendWrapper {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10rem;
+  margin: 0 auto;
 }
 
 .plantTrendContainer {
@@ -332,7 +343,7 @@ body {
 
 .statsCount {
   background-color: #edf4d3;
-  height: 110vh;
+  /* height: 110vh; */
 }
 
 .statsCountHeader {
@@ -359,7 +370,8 @@ body {
 
 .statsCountInner {
   border-bottom: 2px solid #d0d5c0;
-  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .statsCountInner h5 {
@@ -368,7 +380,8 @@ body {
   font-weight: 500;
   line-height: 50.4px;
   color: rgb(34, 34, 34);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+
 }
 
 .statsCountInner p {
@@ -377,39 +390,37 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: rgb(69, 69, 69);
-  padding-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .statsCountInnerOne {
   display: flex;
   gap: 9rem;
-
+  /* justify-content: flex-start */
 }
 
 .statsCountInnerTwo h5 {
   font-family: Inter, sans-serif;
-  font-size: 42px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 50.4px;
   color: rgb(34, 34, 34);
-  padding-bottom: 0.50rem;
-  align-self: center;
+
 }
 
 .statsCountInnerTwo p {
   font-family: "Instrument Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 200;
   line-height: 24px;
   color: rgb(69, 69, 69);
-  padding-bottom: 0.50rem;
-  text-align: center;
+
 }
 
 .popularHeader {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10rem;
+  margin: 0 auto;
 }
 
 .popularHeaderContent {
@@ -470,7 +481,7 @@ body {
 .commentWrapper {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10rem;
+  margin: 0 auto;
 }
 
 .commentContainer {
@@ -484,7 +495,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
- 
+
 }
 
 .commentCardOne h4 {
@@ -547,7 +558,7 @@ body {
   flex-direction: column;
 }
 
-.commentCardThree{
+.commentCardThree {
   background-color: #ffffff;
   width: 550px;
   height: 250px;
@@ -556,32 +567,37 @@ body {
   align-items: center;
   margin-top: 2rem;
 }
-.commentCardThree p{
-   font-family: "Instrument Sans", sans-serif;
+
+.commentCardThree p {
+  font-family: "Instrument Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: rgb(69, 69, 69);
   padding-top: 2rem;
 }
+
 /* lastbackgroundimagestyling */
-.lastBackground{
+.lastBackground {
   background-image: url('./Asset/footerBg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 350px;
 }
-.lastBackgroundHeader{
+
+.lastBackgroundHeader {
   width: 100%;
   max-width: 1200px;
   margin: 0 10rem;
 }
-.lastBackgroundContainer{
+
+.lastBackgroundContainer {
   text-align: center;
   padding: 5rem 0;
 }
-.lastBackgroundContainer h3{
+
+.lastBackgroundContainer h3 {
   font-family: Inter, sans-serif;
   font-size: 42px;
   font-weight: 500;
@@ -589,7 +605,8 @@ body {
   color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
-.lastBackgroundContainer p{
+
+.lastBackgroundContainer p {
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -599,7 +616,7 @@ body {
 }
 
 
-.lastBackgroundBtn{
+.lastBackgroundBtn {
   margin-top: 2rem;
   background-color: #87ad35;
   align-items: center;
@@ -609,7 +626,8 @@ body {
   border-radius: 20px;
   color: rgb(255, 255, 255);
 }
-.lastBackgroundBtn a{
+
+.lastBackgroundBtn a {
   text-decoration: none;
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
@@ -618,67 +636,344 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.lastBackgroundBtn:hover{
+.lastBackgroundBtn:hover {
   background-color: #202e02;
   transition: background-color 2s ease-in-out;
 }
+
 /* last icon styles */
-.lastBackgroundColor{
+.lastBackgroundColor {
   background-color: #edf4d3;
   height: 20vh;
 }
-.lasticonHeader{
+
+.lasticonHeader {
   width: 100%;
   max-width: 1200px;
-  margin: 0 10rem;
+  margin: 0 auto;
 }
-.lasticonContainer{
+
+.lasticonContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #d0d4c1;
   padding: 1rem 0;
 }
-.lastNavLinks{
+
+.lastNavLinks {
   display: flex;
   gap: 2rem;
 }
-.lastNavLinks li{
+
+.lastNavLinks li {
   list-style: none;
 }
-#lastNavLinksOne{
+
+#lastNavLinksOne {
   color: rgb(105, 137, 39);
 }
-.lastNavLinks a{
+
+.lastNavLinks a {
   text-decoration: none;
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color:black;
+  color: black;
 }
-.lasticon{
+
+.lasticon {
   display: flex;
   gap: 1rem;
 }
-.footer p{
+
+.footer p {
   font-family: "Instrument Sans", sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: rgb(69, 69, 69);
-text-align: center;
-padding: 1rem 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(69, 69, 69);
+  text-align: center;
+  padding: 1rem 0;
 }
 
-/* Mobile Responsive */
-@media(max-width:430px){
-  body{
-    height: 10vh;
+/* Mobile: up to 430px - clean, focused rules */
+@media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
   }
+
   .headerParent {
-    height: 70vh;
+    position: relative;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    max-width: none;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    height: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-left: -50vw;
+    /* ensures full-bleed background across viewport */
+    margin-right: -50vw;
   }
+
+  .headerWrapper {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navIcon {
+    display: none;
+  }
+
+  .headerContent {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .headerContent h1 {
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33.5px;
+    color: rgb(255, 255, 255);
+  }
+
+  .secondWrapper {
+    margin: 0 auto;
+    max-width: 430px;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .secondContainer {
+    flex-direction: column;
+    margin: 4rem 0;
+    border-bottom: 2px solid #edf3da;
+  }
+
+  /* .secondContent{
+    margin: 1rem 0;
+  } */
+  .plantTrendWrapper {
+    margin: 0 auto;
+    max-width: 430px;
+    padding: -9rem 0;
+    width: 100%;
+  }
+
+  .plantTrend p {
+    font-size: 34px;
+    margin-bottom: -2rem;
+  }
+
+  .plantTrendContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 0 1rem;
+  }
+
+  .plantTrendContent {
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .plantTrendContent img {
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .secondbackgroundContent h2 {
+    font-size: 30px;
+    font-family: Inter, sans-serif;
+  }
+
+  .secondbackgroundContent h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .categoriesWrapper {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .categoriesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoriesInner p {
+    font-size: 35px;
+  }
+
+  .statsCountHeader {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 1.25rem 0.75rem;
+    /* breathing room on small screens */
+  }
+
+  .statsCountContainer {
+    display: flex;
+    flex-direction: column;
+    /* stack content vertically on phones */
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+
+  }
+
+  /* Make the image and counter blocks flexible on mobile */
+  .statsCountImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .statsCountInner h5 {
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.05px;
+    color: rgb(34, 34, 34);
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+  }
+
+  .statsCountInner p {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(69, 69, 69);
+    padding-bottom: 2rem;
+  }
+
+  .statsCountInner {
+    border-bottom: 2px solid #d0d5c0;
+    padding: 0;
+
+  }
+
+  .statsCountInnerTwo h5 {
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 90.4px;
+    color: rgb(34, 34, 34);
+    padding: 0;
+
+    /* margin-bottom: 2rem; */
+  }
+
+  .statsCountInnerTwo p {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 10;
+    font-weight: 300;
+    line-height: 1.5px;
+    color: rgb(69, 69, 69);
+    margin: 0;
+    gap: 0.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start
+  }
+
+  .statsCountInnerOne {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 430px;
+  }
+  .popularHeader{
+      margin: 0 auto;
+    max-width: 430px;
+    /* padding: -9rem 0; */
+    width: 100%;
+  }
+  .popularHeaderContent h4{
+    font-size: 30px;
+    font-weight: 400
+  }
+  .popularHeaderContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 0 1rem
+  }
+  .popularContent{
+    margin:  1rem auto;
+  }
+  .popularContent p {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 0.30rem;
+}
+.popularContent h6 {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 24px;
+  color: rgb(69, 69, 69);
+  margin-bottom: 0.50rem;
+}
+.popularContent h5 {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.72px;
+  color: rgb(69, 69, 69);
+}
+.commentHeader{
+  background-color: #edf4d3;
+}
+.commentWrapper{
+width: 100%;
+max-width: 430px;
+margin:  0 auto;
+ padding: 1.25rem 0.75rem;
+}
+.commentContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 2rem
+}
+.commentContent {
+  display: grid;
+  grid-template-columns: 1fr;
+gap: 0;
+}
+.commentCardOneLine {
+  background-color: #ffffff;
+  /* width: 100%; */
+  max-width: 400px;
+  /* height: 250px; */
+  /* padding: 2rem 2rem; */
+  border-radius: 12px;
+  align-items: center;
+  padding: 0 1rem;
+}
+
 }
