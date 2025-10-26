@@ -921,9 +921,9 @@ body {
 
   .statsCountInnerTwo p {
     font-family: "Instrument Sans", sans-serif;
-    font-size: 10;
+    font-size: 10px;
     font-weight: 300;
-    line-height: 1.5px;
+    line-height: 1.5;
     color: rgb(69, 69, 69);
     margin: 0;
     gap: 0.1rem;
@@ -1128,6 +1128,7 @@ body {
 
   /* .lastBackgroundColorsecond{
     position: absolute;
+
     background-color: #ca5009;
   } */
   .lastBackgroundHeader {
@@ -1189,7 +1190,7 @@ body {
     max-width: 768px;
     background-size: cover;
     background-position: center top;
-    height: 100vw;
+    height: auto;
     overflow: hidden;
     background-repeat: no-repeat;
     margin-left: -50vw;
@@ -1225,7 +1226,8 @@ body {
   .secondWrapper{
     margin: 0 auto;
     width: 100%;
-    min-width: 500px;
+    /* min-width: 500px; */
+    max-width: 768px;
   }
   .secondContainer{
     margin: 3rem 1rem;
@@ -1233,7 +1235,7 @@ body {
   .secondContent h6{
     width: 100%;
     max-width: none;
-    font-size: 14;
+    font-size: 14px;
 
   }
   .plantTrendWrapper{
@@ -1278,7 +1280,7 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
 }
- categoriesContainer {
+ .categoriesContainer {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -1300,7 +1302,9 @@ body {
   align-items: center;
 }
 .statsCountImg img {
-  width: 130%;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
 }
 .statsCountContent{
   margin-top: 3rem;
@@ -1415,9 +1419,143 @@ body {
   padding-top: 2rem;
 }
 }
-
-
-@media (min-width :800px) and (max-width:1200px) {
+@media (max-width:540px){
+  .headerWrapper{
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
+  }
+  .headerParent{
+      position: relative;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    max-width: none;
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-left: -50vw;
+    /* ensures full-bleed background across viewport */
+    margin-right: -50vw;
+    max-width: 540px;
+  }
+  .headerContent{
+    margin-top: 6rem;
+  }
+  .headerContent h1{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .secondWrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  .secondContainer{
+    flex-direction: column;
+  }
+  .secondContent{
+    margin-top: 3rem;
+  }
+  .plantTrendWrapper{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .plantTrendContainer{
+    display: gird;
+    grid-template-columns: 1fr 1fr;
+    margin-top:-2rem ;
+  }
+  .secondbackgroundContainer{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 520px;
+  }
+  .categoriesWrapper{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .categoriesInner p{
+    font-size: 30px;
+  }
+  .categoriesContainer{
+    flex-direction: column;
+  }
+  .statsCountHeader{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .statsCountContainer{
+    flex-direction: column;
+  }
+  .statsCountImg{
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: -11rem;
+  }
+  .statsCountInnerOne{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .popularHeader{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 520px;
+  }
+  .popularHeaderContent h4{
+    font-size: 25px;
+  }
+  .popularHeaderContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .commentHeader{
+    height: auto;
+  }
+  .commentWrapper{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .commentContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .commentCardOne p{
+    margin-bottom: -2rem;
+  }
+  .commentCardOneLine{
+    width: 500px;
+    height: 250px;
+  }
+  .clientImg img{
+    width: 10%;
+  }
+  .commentCardThree{
+    width: 500px;
+    height: 250px;
+    margin-bottom: 3rem;
+  }
+  .lastBackground{
+    height: 50vh;
+  }
+  .lasticonHeader{
+    margin: 0 auto;
+    max-width: 520px;
+    width: 100%;
+  }
+  .lasticonContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media (min-width :800px) and (max-width:1240px) {
 
   /* body{
     overflow-x: hidden;
@@ -1430,40 +1568,44 @@ body {
     max-width: none;
     background-size: cover;
     background-position: center top;
-    height: 80vh;
+    height: auto;
     overflow: hidden;
     background-repeat: no-repeat;
     margin-left: -50vw;
     /* ensures full-bleed background across viewport */
     margin-right: -50vw;
+    max-width: none;
   }
 
-  .overlay {
+  /* .overlay {
     position: absolute;
 
     background-color: rgb(31, 31, 29);
-  }
+  } */
 
   .headerWrapper {
-    margin: 0 1rem;
+    margin: 0 auto;
     width: 100%;
-    min-width: 800px;
+    max-width: 800px;
     padding: 0 1rem;
   }
-
-  .headerContainer {
-    padding: 1rem 0;
-    gap: 0;
-    margin: 0 auto;
+  .headerContainer{
+    display: flex;
+    justify-content: flex-start;
   }
-
-  .navLinks {}
-
-  .navIcon {}
-
+  .navLinks{
+  margin-left: 20rem ;
+  padding: 0;
+  }
+  .navIcon{
+    margin: 0;
+    padding-left: 2rem;
+  }
+  
   .headerContent {
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 ;
+    margin-top: 0.50rem ;
   }
 
   .headerContent p {
@@ -1472,20 +1614,34 @@ body {
   }
 
   .headerContent h1 {
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 700;
-    padding-top: 1rem;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 500;
+    padding-top: 0.50rem;
   }
 
   .secondWrapper {
-    margin: 0 2rem;
+    margin: 0 auto;
     width: 100%;
-    min-height: 768px;
+    max-width: 1000px;
   }
 
   .secondContent h4 {
     font-size: 20px;
 
   }
+  .plantTrendWrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .plantTrendContent h5 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 14.4px;
+    font-weight: 700;
+    line-height: 18.72px;
+    color: rgb(69, 69, 69);
+  }
+  
+ 
 }
