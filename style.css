@@ -1487,6 +1487,31 @@ body {
     line-height: 33.5px;
     color: rgb(255, 255, 255);
   }
+  .headerContentShop {
+  margin-top: 2rem;
+  background-color: #87ad35;
+  align-items: center;
+  width: 110px;
+  margin: 3rem auto;
+  padding: 10px 10px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.headerContentShop a {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  align-self: center;
+}
+
+.headerContentShop:hover {
+  background-color: #202e02;
+  transition: background-color 2s ease-in-out;
+}
 
   .secondWrapper {
     margin: 0 auto;
@@ -1576,6 +1601,32 @@ body {
     color: rgb(255, 255, 255);
     margin-bottom: 2rem;
   }
+  .secondbackgroundbutton {
+  margin: 0 auto;
+  padding: 9px 9px;
+  width: 110px;
+  border-radius: 19px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.secondbackgroundbutton a {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.secondbackgroundbutton:hover {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 2s ease-in-out;
+}
+
+.secondbackgroundbutton a:hover {
+  color: #062a2d;
+  transition: color 1s ease-in-out;
+}
 
   .categoriesWrapper {
     width: 100%;
@@ -1653,6 +1704,9 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: start;
     padding: 0 1rem
+  }
+  .popularHeaderImg img{
+   width: 95%;
   }
 
   .popularContent {
@@ -1857,6 +1911,30 @@ body {
     color: rgb(255, 255, 255);
     margin-bottom: 1rem;
   }
+  .lastBackgroundBtn {
+  margin-top: 2rem;
+  background-color: #87ad35;
+  align-items: center;
+  width: 110px;
+  margin: 2rem auto;
+  padding: 10px 10px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.lastBackgroundBtn a {
+  text-decoration: none;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.lastBackgroundBtn:hover {
+  background-color: #202e02;
+  transition: background-color 2s ease-in-out;
+}
   
   .lastBackgroundColor{
     height: auto;
